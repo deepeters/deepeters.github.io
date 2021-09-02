@@ -9,47 +9,82 @@ import AL from "../images/african-woman.png";
 //import images
 import Interests from "../images/interests.jpg"
 
+//Styled Components
+import styled from 'styled-components';
+
+//Styles
+import {StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styles";
+
 const InterestsSection = () => {
     return (
-        <div className="projects">
-            <div className="description">
-                <h2>Proffessional <span> interests </span> and hobbies </h2>
-                <div className="cards">
-                    <div className="card">
+        <StyledInterests>
+            <StyledDescription>
+                <h2>Proffessional <span> Interests </span> </h2>
+                <StyledCards>
+                    <StyledCard>
                         <div className="icon">
                             <img src= {AI} height="100" alt="Artificial Intelligence" />
                             <h3>Artificial Intelligence</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div className="card">
+                    </StyledCard>
+                    <StyledCard>
                         <div className="icon">
                             <img src= {ML} height="100" alt="Machine Learning" />
                             <h3>Machine Learning</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div className="card">
+                    </StyledCard>
+                    <StyledCard>
                         <div className="icon">
                             <img src= {IS} height="100" alt="Information Security" />
                             <h3>Information Security</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div className="card">
+                    </StyledCard>
+                    <StyledCard>
                         <div className="icon">
                             <img src= {AL} height="100" alt="African Literature" />
                             <h3>African Literature</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div className="image">
+                    </StyledCard>
+                </StyledCards>
+            </StyledDescription>
+            <StyledImage>
                 <img src= {Interests} height = "600" alt="Interests Section" />
-            </div>
-        </div>
+            </StyledImage>
+        </StyledInterests>
     )
 }
+
+const StyledInterests = styled(StyledAbout) `
+    h2 {
+        padding-bottom: 5rem;
+    }
+    p {
+        width: 70%;
+        padding: 2rem 0rem 4rem 0rem;
+    }
+`;
+
+const StyledCards = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+const StyledCard = styled.div`
+    flex-basis: 20rem;
+    .icon {
+        display: flex;
+        align-items: center;
+        h3 {
+            margin-left: 1rem;
+            background: white;
+            color: black;
+            padding: 1rem;
+        }
+    }
+`;
 
 export default InterestsSection;
