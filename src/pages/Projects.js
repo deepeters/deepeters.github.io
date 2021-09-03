@@ -14,21 +14,21 @@ const Projects = () => {
             <StyledProject>
                 <h2>Currency Exchange</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to = "/projects/currency-exchange">
                     <img src={CE} alt="Screenshot of Currency Exchange home page"/>
                 </Link>
             </StyledProject>
             <StyledProject>
                 <h2>Music Application</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to = "/projects/music-application">
                     <img src={MA} alt="Screenshot of Music Application home page"/>
                 </Link>
             </StyledProject>
             <StyledProject>
                 <h2>Douglas Fir</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to = "/projects/douglas-fir">
                     <img src={DF} alt="Screenshot of Douglas Fir home page"/>
                 </Link>
             </StyledProject>
