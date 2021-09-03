@@ -8,9 +8,14 @@ import CE from '../images/CE.png';
 import MA from '../images/MA.png';
 import DF from '../images/DF.png'; 
 
+//Animations
+import {motion} from "framer-motion";
+import { pageAnimation } from '../animation';
+
+
 const Projects = () => {
     return(
-        <StyledProjects>
+        <StyledProjects style = {{ background: "#fff" }} exit = "exit" variants = { pageAnimation } initial = "hidden" animate = "show" >
             <StyledProject>
                 <h2>Currency Exchange</h2>
                 <div className="line"></div>
@@ -36,7 +41,7 @@ const Projects = () => {
     )
 }
 
-const StyledProjects = styled.div`
+const StyledProjects = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
