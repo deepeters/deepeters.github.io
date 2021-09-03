@@ -2,24 +2,34 @@ import React from 'react';
 import about from "../images/about.jpg";
 
 //Styled Components
-import styled from 'styled-components';
 import {StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styles";
 
+//Framer Motion
+import { motion } from 'framer-motion';
+
 const AboutSection = () => {
+
+
     return(
         <StyledAbout>
             <StyledDescription>
-                <div className="title">
+                <motion.div className="title">
                     <StyledHide>
-                        <h2>Hello, I am Dennis</h2>
+                        <motion.h2>
+                            Hello, I am Dennis
+                        </motion.h2>
                     </StyledHide>
                     <StyledHide>
-                        <h2> a <span> Software Engineer </span> & </h2>
+                        <motion.h2>
+                             a <span> Software Engineer </span> & 
+                        </motion.h2>
                     </StyledHide>
                     <StyledHide>
-                        <h2>an African literature enthuthiast</h2>
+                        <motion.h2>
+                            an African literature enthuthiast
+                        </motion.h2>
                     </StyledHide>
-                </div>
+                </motion.div>
                 <p> Contact me for discussions and collaborations </p>
                 <button>Contact</button>
             </StyledDescription>
@@ -29,9 +39,6 @@ const AboutSection = () => {
         </StyledAbout>
     )
 }
-
-//Styled Components
-
 
 
 export default AboutSection;

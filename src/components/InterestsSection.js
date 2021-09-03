@@ -13,7 +13,7 @@ import Interests from "../images/interests.jpg"
 import styled from 'styled-components';
 
 //Styles
-import {StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styles";
+import {StyledAbout, StyledDescription, StyledImage } from "../styles";
 
 const InterestsSection = () => {
     return (

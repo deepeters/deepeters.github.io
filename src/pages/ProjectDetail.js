@@ -2,13 +2,12 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router';
 import { ProjectState } from '../projectState';
-import { moveEmitHelpers } from 'typescript';
 
 
 const ProjectDetail = () => {
     const history = useHistory();
     const url = history.location.pathname;
-    const [projects,setProjects] = useState(ProjectState);
+    const [projects, setProjects] = useState(ProjectState);
     const [project, setProject ] = useState(null);
 
     //UseEffect
@@ -82,7 +81,6 @@ const StyledDescription = styled.div `
     }
     p {
         padding: 2rem 0rem; 
-    }
     }
 `;
 const StyledLinks = styled.div`
