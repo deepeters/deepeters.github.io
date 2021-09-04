@@ -28,4 +28,5 @@ const WaveSvg = styled.svg `
     z-index: 1;
 `;
 
+
 export default Wave;
