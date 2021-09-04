@@ -6,45 +6,40 @@ import { StyledAbout } from '../styles';
 
 import Toggle from './Toggle';
 
+import { AnimateSharedLayout } from 'framer-motion';
+
 const QuestionsSection = () => {
 
     return (
         <StyledQuestions>
             <h2> Any Questions? <span> FAQs </span> </h2>
-            <Toggle> 
-                <div className="question">
-                    <h4> Where did Dennis attend school?</h4>
-                    <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
-                    </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toggle>
-            <div className="question">
-                <h4> Where has Dennis worked?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4> What frameworks is Dennis most familiar with?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4> Where does Dennis want to work? </h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
+            <AnimateSharedLayout> 
+                <Toggle title="Where did Dennis attend school?">            
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+                        </div>        
+                </Toggle>
+                <Toggle title = "Where has Dennis worked?"> 
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+                        </div>
+                </Toggle>
+                <Toggle title = "What is Dennis's TechStack?">              
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+                        </div>
+                </Toggle>
+                <Toggle title = "Where does Dennis want to work?">               
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+                        </div>
+                    
+                </Toggle>
+            </AnimateSharedLayout>
         </StyledQuestions>
     )
 }
