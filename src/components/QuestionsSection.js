@@ -7,11 +7,15 @@ import { StyledAbout } from '../styles';
 import Toggle from './Toggle';
 
 import { AnimateSharedLayout } from 'framer-motion';
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 const QuestionsSection = () => {
 
+    const [element, controls] = useScroll();
+
     return (
-        <StyledQuestions>
+        <StyledQuestions variants = { scrollReveal } ref = { element } animate = { controls } initial = "hidden">
             <h2> Any Questions? <span> FAQs </span> </h2>
             <AnimateSharedLayout> 
                 <Toggle title="Where did Dennis attend school?">            

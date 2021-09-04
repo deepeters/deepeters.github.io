@@ -15,9 +15,16 @@ import styled from 'styled-components';
 //Styles
 import {StyledAbout, StyledDescription, StyledImage } from "../styles";
 
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
+
+
 const InterestsSection = () => {
+
+    const [element, controls] = useScroll();
+
     return (
-        <StyledInterests>
+        <StyledInterests variants = { scrollReveal } ref = { element } animate = { controls } initial = "hidden">
             <StyledDescription>
                 <h2>Proffessional <span> Interests </span> </h2>
                 <StyledCards>
