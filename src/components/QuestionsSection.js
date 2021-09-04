@@ -4,18 +4,23 @@ import React from 'react';
 import styled from "styled-components";
 import { StyledAbout } from '../styles';
 
+import Toggle from './Toggle';
+
 const QuestionsSection = () => {
+
     return (
         <StyledQuestions>
             <h2> Any Questions? <span> FAQs </span> </h2>
-            <div className="question">
-                <h4> Where did Dennis attend school?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+            <Toggle> 
+                <div className="question">
+                    <h4> Where did Dennis attend school?</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
             <div className="question">
                 <h4> Where has Dennis worked?</h4>
                 <div className="answer">
