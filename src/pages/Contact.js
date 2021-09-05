@@ -5,17 +5,19 @@ import {motion} from "framer-motion";
 import { pageAnimation, titleAnim } from '../animation';
 
 import styled from 'styled-components';
+import background from '../images/background.jpg';
+
 
 const Contact = () => {
     return(
-        <styledContact 
+        <StyledContact 
             exit= "exit"
             variants = { pageAnimation } 
             initial = "hidden" 
             animate = "show" 
-            style = {{ background: "#fff" }}
+            //style = {{ background: "#fff" }}
             >
-            <styledTitle>
+            <StyledTitle>
                 <Hide>
                     <motion.h2 variants = { titleAnim }> Get in touch. </motion.h2>
                 </Hide>
@@ -39,12 +41,15 @@ const Contact = () => {
                         </Social>
                     </Hide>
                 </div>
-            </styledTitle>
-        </styledContact>
+            </StyledTitle>
+        </StyledContact>
     )
 }
 
-const styledContact = styled(motion.div) `
+const StyledContact = styled(motion.div) `
+    background-image: url(${background});
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 5rem 10rem;
     color: #353535;
     min-height: 90vh;
@@ -54,9 +59,10 @@ const styledContact = styled(motion.div) `
     }
 `;
 
-const styledTitle = styled.div`
+const StyledTitle = styled.div`
+    background: rgba(76, 175, 80, 0.3)
     margin-bottom: 4rem;
-    color: black;
+    color: white;
     @media (max-width: 1300px){
         margin-top: 5rem;        
     }

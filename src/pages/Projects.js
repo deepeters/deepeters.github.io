@@ -23,7 +23,7 @@ const Projects = () => {
 
     return(
         <StyledProjects 
-            style = {{ background: "#fff" }} 
+            //style = {{ background: "#fff" }} 
             exit = "exit" 
             variants = { pageAnimation } 
             initial = "hidden" 
@@ -90,6 +90,9 @@ const StyledProject = styled(motion.div)`
         width: 100%;
         height: 70vh;
         object-fit: cover;
+    }
+    h2 {
+        color: white;
     }
 `;
 
