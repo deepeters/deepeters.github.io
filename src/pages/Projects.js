@@ -11,10 +11,15 @@ import DF from '../images/DF.png';
 //Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from '../animation';
-import { sliderContainer, fade, photoAnim, lineAnim, slider } from '../animation';
+import { sliderContainer, fade, photoAnim, lineAnim, slider, swoopAdoop } from '../animation';
+import { useScroll } from '../components/useScroll';
 
 
 const Projects = () => {
+
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
+
     return(
         <StyledProjects 
             style = {{ background: "#fff" }} 
@@ -40,16 +45,17 @@ const Projects = () => {
                 </Link>
             </StyledProject>
             
-            <StyledProject>
+            <StyledProject ref = {element} variants = { swoopAdoop } animate = {controls} initial = "hidden" >
                 <h2>Music Application</h2>
-                <div className="line"></div>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/music-application">
                     <img src={MA} alt="Screenshot of Music Application home page"/>
                 </Link>
             </StyledProject>
-            <StyledProject>
+
+            <StyledProject ref = {element2} variants = { swoopAdoop } animate = {controls2} initial = "hidden">
                 <h2>Douglas Fir</h2>
-                <div className="line"></div>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/douglas-fir">
                     <img src={DF} alt="Screenshot of Douglas Fir home page"/>
                 </Link>
@@ -67,8 +73,9 @@ const StyledProjects = styled(motion.div)`
     }
 `;
 
-const StyledProject = styled.div`
+const StyledProject = styled(motion.div)`
     padding-bottom: 10rem;
+    //overflow: hidden;
     .line {
         height: 0.5rem;
         background: #23d997;
