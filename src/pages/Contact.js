@@ -60,7 +60,6 @@ const StyledContact = styled(motion.div) `
 `;
 
 const StyledTitle = styled.div`
-    background: rgba(76, 175, 80, 0.3)
     margin-bottom: 4rem;
     color: white;
     @media (max-width: 1300px){
