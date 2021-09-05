@@ -5,6 +5,7 @@ import GlobalStyle from './components/GlobalStyle';
 
 //Navigation Bar
 import Nav from './components/Nav'
+import ScrollTop from './components/ScrollTop';
 
 //Import Pages
 import About from './pages/About';
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       < GlobalStyle />
+      < ScrollTop />
       < Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch Location = { location } key = { location.pathname }>

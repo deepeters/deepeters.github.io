@@ -15,6 +15,7 @@ import { sliderContainer, fade, photoAnim, lineAnim, slider, swoopAdoop } from '
 import { useScroll } from '../components/useScroll';
 
 
+
 const Projects = () => {
 
     const [element, controls] = useScroll();
@@ -60,6 +61,7 @@ const Projects = () => {
                     <img src={DF} alt="Screenshot of Douglas Fir home page"/>
                 </Link>
             </StyledProject>
+
         </StyledProjects>
     )
 }
