@@ -84,7 +84,7 @@ const StyledNav = styled.nav `
             justify-content: space-around;
             width: 100%auto;
             li {
-                padding: 0;
+                padding: 1rem 1rem 0rem 0rem;
             }
         }
     }

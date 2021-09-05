@@ -33,8 +33,7 @@ const AboutSection = () => {
                     </StyledHide>
                 </motion.div>
                 <motion.p variants = { fade }> 
-                    Contact me for discussions and collaborations.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor commodi neque officia et magnam. Consequatur sequi maxime perferendis aperiam.
+                    A Sofware Engineer with a keen interest in Machine Learning and its applications and implications on Information Systems Security and Data Privacy. Additionally, an African Literature enthuthiast, a closeted writer and author. 
                 </motion.p>
                 <motion.button variants = { fade }>
                     Contact

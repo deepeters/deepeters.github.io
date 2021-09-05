@@ -25,42 +25,43 @@ const InterestsSection = () => {
 
     return (
         <StyledInterests variants = { scrollReveal } ref = { element } animate = { controls } initial = "hidden">
+            <StyledImage>
+                <img src= {Interests} height = "600" alt="Interests Section" />
+            </StyledImage>
             <StyledDescription>
                 <h2>Proffessional <span> Interests </span> </h2>
                 <StyledCards>
                     <StyledCard>
                         <div className="icon">
                             <img src= {AI} height="100" alt="Artificial Intelligence" />
-                            <h3>Artificial Intelligence</h3>
+                            <h3>A.I.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Artificial Intelligence</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
                             <img src= {ML} height="100" alt="Machine Learning" />
-                            <h3>Machine Learning</h3>
+                            <h3>M.L.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Machine Learning</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
                             <img src= {IS} height="100" alt="Information Security" />
-                            <h3>Information Security</h3>
+                            <h3>I.S.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Information Security</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
                             <img src= {AL} height="100" alt="African Literature" />
-                            <h3>African Literature</h3>
+                            <h3>A.L.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>African Literature</p>
                     </StyledCard>
                 </StyledCards>
             </StyledDescription>
-            <StyledImage>
-                <img src= {Interests} height = "600" alt="Interests Section" />
-            </StyledImage>
+            
         </StyledInterests>
     )
 }
@@ -78,13 +79,19 @@ const StyledInterests = styled(StyledAbout) `
 const StyledCards = styled.div`
     display: flex;
     flex-wrap: wrap;
-    @media (max-width: 1300px){
+    @media (max-width: 1000px){
         justify-content: center;
     }
 `;
 
 const StyledCard = styled.div`
     flex-basis: 20rem;
+    padding: 3rem;
+    P {
+        font-size: large;
+        font-weight: 300;
+        text-align: center;
+    }
     .icon {
         display: flex;
         align-items: center;

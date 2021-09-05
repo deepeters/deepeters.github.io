@@ -18,10 +18,19 @@ const QuestionsSection = () => {
         <StyledQuestions variants = { scrollReveal } ref = { element } animate = { controls } initial = "hidden">
             <h2> Any Questions? <span> FAQs </span> </h2>
             <AnimateSharedLayout> 
-                <Toggle title="Where did Dennis attend school?">            
+                <Toggle title="Which schools has Dennis attended?">            
                         <div className="answer">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+                            <h4> 2021 - 2021 : <span> HarvardX (Harvard on edX) </span> </h4>
+                            <p>CS50's Web Programming with Python and Javascript</p>
+
+                            <h4> 2020 - 2021 : <span> Google Africa Developer Scholarship </span> </h4>
+                            <p>Android Developer Foundations & Kotlin App Fundamentals</p>
+
+                            <h4> 2020 - 2021 : <span>  Moringa School </span> </h4>
+                            <p>Software Immersive FullStack Development</p>
+
+                            <h4> 2013 - 2018 : <span> Dedan Kimathi University of Technology </span> </h4>
+                            <p>Bachelor of Science (BSc.) Information Technology</p>
                         </div>        
                 </Toggle>
                 <Toggle title = "Where has Dennis worked?"> 
@@ -68,9 +77,17 @@ const StyledQuestions = styled (StyledAbout)`
         cursor: pointer;
     }
     .answer {
-        padding: 2rem 0rem;
+        padding: 2rem 0rem 2rem 10rem;
+        display: block;
+        h4 {
+            font-weight: lighter;
+            padding-bottom: 0rem;
+            span {
+                display: inline-block;
+                font-weight: lighter;
+            }
         p {
-            padding: 1rem 0rem;
+            padding: 0rem 0rem;
         }
     }
 `;
