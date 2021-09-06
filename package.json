@@ -1,5 +1,5 @@
 {
-  "homepage": "https://deepeters.github.io/deepeters.github.io/",
+  "homepage": "https://deepeters.github.io",
   "name": "dennis-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +28,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
-     ]
+    ]
   },
   "browserslist": {
     "production": [
