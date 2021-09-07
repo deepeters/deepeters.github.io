@@ -20,50 +20,30 @@ const QuestionsSection = () => {
             <AnimateSharedLayout> 
                 <Toggle title = "What is Dennis's TechStack and Skillset?">              
                         <div className="answer">
-                            <h4> <span> Software immersive full stack development, </span> implementation, testing and support in: </h4>
-                            <p> JavaScript,CSS,HTML, Java and Python with application skills in version control tools like Git, open-source software web application frameworks such as Spark, SpringBoot, Django, Flask, React JS and Angular JS and a collection of useful frontend libraries.</p>
-                        
-                            <h4> <span>  Mobile and Android Programming </span> with Java & Kotlin programming languages. </h4>
-                            <p>  </p>
-
-                            <h4> <span> Database Management: </span> </h4>
-                            <p> an understanding in structured query language (SQL) including PostgreSQL and MySQL, knowledge of relational database management, object-oriented database management systems and NoSQL frameworks like Firebase. </p>
-
-                            <h4> <span>  Implementation of software architectural styles </span> for designing networked applications such as: </h4>
-                            <p>Representational State Transfer (REST) APIs and FastAPIs</p>
-
-                            <h4> <span>  Information security: </span> </h4>
-                            <p>comprising white coat ethical hacking, digital forensics, penetration testing, logs management, virtualisation, malware reverse engineering, scanning networks, vulnerability analysis, cloud computing and cryptography.</p>
-
-                            <h4> <span>  Systems Administration: </span> </h4>
-                            <p>with responsibilities to set up and monitor the operations and maintenance of computer systems.</p>
-
-                            <h4> <span>  IT Support: </span> </h4>
-                            <p>including product version updates, critical infrastructure updates, vendor clarification and support, compliance with IT regulations, outsourcing and troubleshooting computer systems and operations.</p>
-
-                            <h4> <span>  Customer Technical Support. </span> </h4>
-                            <p>  </p>
+                            <p> 
+                                <ul>
+                                    <li> Software immersive full stack development, implementation, testing and support in JavaScript,CSS,HTML, Java and Python with application skills in version control tools like Git, open-source software web application frameworks such as Spark, SpringBoot, Django, Flask, React JS and Angular JS and a collection of useful frontend libraries. </li>
+                                    <li> Android Programming with Java & Kotlin programming languages. </li>
+                                    <li> Database Management; an understanding in structured query language (SQL) including PostgreSQL and MySQL, knowledge of relational database management, object-oriented database management systems and NoSQL frameworks like Firebase. </li>
+                                    <li> Implementation of software architectural styles for designing networked applications such as Representational State Transfer (REST) APIs. </li>
+                                    <li> Information security comprising white coat ethical hacking, digital forensics, penetration testing, logs management, virtualisation, malware reverse engineering, scanning networks, vulnerability analysis, cloud computing and cryptography. </li>
+                                    <li> Systems Administration with responsibilities to set up and monitor the operations and maintenance of computer systems. </li>
+                                    <li> IT Support including product version updates, critical infrastructure updates, vendor clarification and support, compliance with IT regulations, outsourcing and troubleshooting computer systems and operations. </li>
+                                    <li> Customer Technical Support. </li>
+                                </ul>
+                            </p>
+                   
                         </div>
                 </Toggle>
                 <Toggle title="Which schools has Dennis attended?">            
                         <div className="answer">
-                            <h4> 2021 - 2021 : <span> HarvardX (Harvard on edX) </span> </h4>
-                            <p>CS50's Web Programming with Python and Javascript</p>
-
-                            <h4> 2020 - 2021 : <span> Google Africa Developer Scholarship </span> </h4>
-                            <p>Android Developer Foundations & Kotlin App Fundamentals</p>
- 
-                            <h4> 2020 - 2021 : <span>  Moringa School </span> </h4>
-                            <p>Software Immersive FullStack Development</p>
-
-                            <h4> 2019 - 2019 : <span>  Strathmore University </span> </h4>
-                            <p> Information Systems Security & Certified Ethical Hacking (CEHv10) </p>
-
-                            <h4> 2013 - 2018 : <span> Dedan Kimathi University of Technology </span> </h4>
-                            <p>Bachelor of Science (BSc.) Information Technology</p>
-
-                            <h4> 2012 - 2013 : <span> St. Joseph Computer College </span> </h4>
-                            <p> Diploma in Information Communication Technlogy </p>
+                            <h4> 2021 - 2021 || <span> HarvardX (Harvard on edX) </span> || CS50's Web Programming with Python and Javascript </h4>
+                            <h4> 2020 - 2021 || <span> Google Africa Developer Scholarship </span> || Android Developer Foundations & Kotlin App Fundamentals </h4>
+                            <h4> 2020 - 2021 || <span>  Moringa School </span> || Software Immersive FullStack Development </h4>
+                            <h4> 2019 - 2019 || <span>  Strathmore University </span> || Information Systems Security & Certified Ethical Hacking (CEHv10) </h4>
+                            <h4> 2013 - 2018 || <span> Dedan Kimathi University of Technology </span> || Bachelor of Science (BSc.) Information Technology </h4>
+                            <h4> 2012 - 2013 || <span> St. Joseph Computer College </span> || Diploma in Information Communication Technlogy </h4>
+                           
                         </div>        
                 </Toggle>
                 <Toggle title = "Where has Dennis worked?"> 
