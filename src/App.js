@@ -14,7 +14,7 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 
 //Import from Router
-import {Switch , Route, useLocation} from 'react-router-dom';
+import { HashRouter as Router, Switch , Route, useLocation} from 'react-router-dom';
 
 //Animation
 import { AnimatePresence } from "framer-motion";
@@ -30,18 +30,20 @@ function App() {
       < Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch Location = { location } key = { location.pathname }>
-          < Route path="/" exact>
-            < About />
-          </Route>
-          <Route path="/projects" exact>
-            < Projects />
-          </Route>
-          <Route path="/projects/:id">
-            <ProjectDetail />
-          </Route>
-          <Route path="/contact">
-            < Contact />
-          </Route>
+          <Router basename = "/"> 
+            < Route path="/" exact>
+              < About />
+            </Route>
+            <Route path="/projects" exact>
+              < Projects />
+            </Route>
+            <Route path="/projects/:id">
+              <ProjectDetail />
+            </Route>
+            <Route path="/contact">
+              < Contact />
+            </Route>
+          </Router>
         </Switch>
       </AnimatePresence>
       
