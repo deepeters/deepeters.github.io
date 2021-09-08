@@ -12,12 +12,12 @@ export const pageAnimation = {
             staggerChildren: 0.25,
         },
     },
-    exit: {
-        opacity: 0,
-        transition: {
-            duration: 0.25,
-        },
-    },
+    // exit: {
+    //     opacity: 0,
+    //     transition: {
+    //         duration: 0.25,
+    //     },
+    // },
 };
 
 export const titleAnim = {
@@ -51,7 +51,7 @@ export const photoAnim = {
 export const lineAnim = {
     hidden: { width: "0%" },
     show: {
-        width: "100%",
+        width: "25%",
         transition: { duration: 1 },
     }
 }

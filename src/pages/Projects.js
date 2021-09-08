@@ -46,21 +46,84 @@ const Projects = () => {
                 </Link>
             </StyledProject>
             
-            <StyledProject ref = {element} variants = { swoopAdoop } animate = {controls} initial = "hidden" >
-                <h2>Music Application</h2>
+            <StyledProject >
+                <motion.h2 variants = { fade }>Music Application</motion.h2>
                 <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/music-application">
-                    <img src={MA} alt="Screenshot of Music Application home page"/>
+                    <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
                 </Link>
             </StyledProject>
 
-            <StyledProject ref = {element2} variants = { swoopAdoop } animate = {controls2} initial = "hidden">
-                <h2>Douglas Fir</h2>
+            <StyledProject >
+                <motion.h2 variants = { fade }>Douglas Fir</motion.h2>
                 <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/douglas-fir">
-                    <img src={DF} alt="Screenshot of Douglas Fir home page"/>
+                    <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
                 </Link>
             </StyledProject>
+
+            <StyledProject>
+                <motion.h2 variants = { fade }>Quotes Application</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/quotes-app">
+                    <Hide> 
+                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                    </Hide>
+                </Link>
+            </StyledProject>
+            
+            <StyledProject >
+                <motion.h2 variants = { fade }>Pizza Place</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/pizza-place">
+                    <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                </Link>
+            </StyledProject>
+
+            <StyledProject >
+                <motion.h2 variants = { fade }>Github Search</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/github-search">
+                    <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                </Link>
+            </StyledProject>
+
+            <StyledProject>
+                <motion.h2 variants = { fade }>Akan Names</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/akan-names">
+                    <Hide> 
+                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                    </Hide>
+                </Link>
+            </StyledProject>
+            
+            <StyledProject >
+                <motion.h2 variants = { fade }>Delani Studio</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/delani-studio">
+                    <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                </Link>
+            </StyledProject>
+
+            <StyledProject>
+                <motion.h2 variants = { fade }>Job Search</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/job-search">
+                    <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                </Link>
+            </StyledProject>
+
+            <StyledProject>
+                <motion.h2 variants = { fade }>Shopping App</motion.h2>
+                <motion.div variants = { lineAnim } className="line"></motion.div>
+                <Link to = "/projects/shopping-app">
+                    <Hide> 
+                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                    </Hide>
+                </Link>
+            </StyledProject>
+
 
         </StyledProjects>
     )
@@ -70,8 +133,12 @@ const StyledProjects = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     h2 {
         padding: 1rem 0rem;
+        font-size: 2rem;
     }
     @media (max-width: 1300px){
         padding: 2rem 2rem;        
@@ -80,6 +147,8 @@ const StyledProjects = styled(motion.div)`
 
 const StyledProject = styled(motion.div)`
     padding-bottom: 10rem;
+    flex: 1;
+    flex-basis: 30rem;
     //overflow: hidden;
     .line {
         height: 0.5rem;
@@ -87,8 +156,8 @@ const StyledProject = styled(motion.div)`
         margin-bottom: 3rem;
     }
     img {
-        width: 100%;
-        height: 70vh;
+        width: 70%;
+        height: 50vh;
         object-fit: cover;
     }
     h2 {
