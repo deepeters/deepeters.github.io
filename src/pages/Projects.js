@@ -29,101 +29,100 @@ const Projects = () => {
             initial = "hidden" 
             animate = "show" 
         >
-            <motion.div variants = { sliderContainer }> 
+            {/* <motion.div variants = { sliderContainer }> 
                 <Frame1 variants = { slider }> </Frame1>
                 <Frame2 variants = { slider }> </Frame2>
                 <Frame3 variants = { slider }> </Frame3>
                 <Frame4 variants = { slider }> </Frame4>
-            </motion.div>
+            </motion.div> */}
 
-            <StyledProject>
-                <motion.h2 variants = { fade }>Currency Exchange</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/currency-exchange">
-                    <Hide> 
-                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
-                    </Hide>
-                </Link>
-            </StyledProject>
-            
-            <StyledProject >
-                <motion.h2 variants = { fade }>Music Application</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/music-application">
-                    <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
-                </Link>
-            </StyledProject>
+                <StyledProject>
+                    <motion.h2 variants = { fade }>Currency Exchange</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/currency-exchange">
+                        <Hide> 
+                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                        </Hide>
+                    </Link>
+                </StyledProject>
+                
+                <StyledProject >
+                    <motion.h2 variants = { fade }>Music Application</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/music-application">
+                        <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                    </Link>
+                </StyledProject>
 
-            <StyledProject >
-                <motion.h2 variants = { fade }>Douglas Fir</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/douglas-fir">
-                    <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
-                </Link>
-            </StyledProject>
+                <StyledProject >
+                    <motion.h2 variants = { fade }>Douglas Fir</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/douglas-fir">
+                        <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                    </Link>
+                </StyledProject>
 
-            <StyledProject>
-                <motion.h2 variants = { fade }>Quotes Application</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/quotes-app">
-                    <Hide> 
-                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
-                    </Hide>
-                </Link>
-            </StyledProject>
-            
-            <StyledProject >
-                <motion.h2 variants = { fade }>Pizza Place</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/pizza-place">
-                    <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
-                </Link>
-            </StyledProject>
+                <StyledProject>
+                    <motion.h2 variants = { fade }>Quotes Application</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/quotes-app">
+                        <Hide> 
+                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                        </Hide>
+                    </Link>
+                </StyledProject>
+                
+                <StyledProject >
+                    <motion.h2 variants = { fade }>Pizza Place</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/pizza-place">
+                        <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                    </Link>
+                </StyledProject>
 
-            <StyledProject >
-                <motion.h2 variants = { fade }>Github Search</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/github-search">
-                    <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
-                </Link>
-            </StyledProject>
+                <StyledProject >
+                    <motion.h2 variants = { fade }>Github Search</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/github-search">
+                        <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                    </Link>
+                </StyledProject>
 
-            <StyledProject>
-                <motion.h2 variants = { fade }>Akan Names</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/akan-names">
-                    <Hide> 
-                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
-                    </Hide>
-                </Link>
-            </StyledProject>
-            
-            <StyledProject >
-                <motion.h2 variants = { fade }>Delani Studio</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/delani-studio">
-                    <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
-                </Link>
-            </StyledProject>
+                <StyledProject>
+                    <motion.h2 variants = { fade }>Akan Names</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/akan-names">
+                        <Hide> 
+                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                        </Hide>
+                    </Link>
+                </StyledProject>
+                
+                <StyledProject >
+                    <motion.h2 variants = { fade }>Delani Studio</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/delani-studio">
+                        <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                    </Link>
+                </StyledProject>
 
-            <StyledProject>
-                <motion.h2 variants = { fade }>Job Search</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/job-search">
-                    <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
-                </Link>
-            </StyledProject>
+                <StyledProject>
+                    <motion.h2 variants = { fade }>Job Search</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/job-search">
+                        <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                    </Link>
+                </StyledProject>
 
-            <StyledProject>
-                <motion.h2 variants = { fade }>Shopping App</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/shopping-app">
-                    <Hide> 
-                        <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
-                    </Hide>
-                </Link>
-            </StyledProject>
-
+                <StyledProject>
+                    <motion.h2 variants = { fade }>Shopping App</motion.h2>
+                    <motion.div variants = { lineAnim } className="line"></motion.div>
+                    <Link to = "/projects/shopping-app">
+                        <Hide> 
+                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                        </Hide>
+                    </Link>
+                </StyledProject>
 
         </StyledProjects>
     )
