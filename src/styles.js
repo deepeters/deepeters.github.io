@@ -22,6 +22,10 @@ export const StyledDescription = styled.div`
     h2 {
         font-weight: lighter;
     }
+    p {
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
     @media (max-width: 1300px){
            padding : 0;
            button {

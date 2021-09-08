@@ -1,6 +1,8 @@
 import React from 'react';
 import about from "../images/about.jpg";
 
+import { Link } from 'react-router-dom';
+
 //Styled Components
 import {StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styles";
 
@@ -33,10 +35,18 @@ const AboutSection = () => {
                     </StyledHide>
                 </motion.div>
                 <motion.p variants = { fade }> 
-                    A Sofware Engineer with a keen interest in Machine Learning and its applications and implications on Information Systems Security and Data Privacy. Additionally, an African Literature enthuthiast, a closeted writer and author. 
+                <p>
+                Working in Nairobi City, Kenya, I have around three to four years in software development and contributed more than twenty open-source application projects to the online community. 
+                <br/><br/>
+                As a software engineer, I have worked in several startups and developed, tested, deployed, and maintained solutions ranging from banking, inventory, payroll, and human resource information management systems among others. I have developed and implemented API interfaces to share intricate resources between application software; with the most recent being the MPesa payment service integration and other subscription as services platforms. 
+                <br/><br/>
+                As an innovator and solution finder, I have attempted to develop a solution that combines my discreet passion for creative arts, in particular, African literature with technological tools and techniques.
+                </p>
+
                 </motion.p>
-                <motion.button variants = { fade }>
-                    Contact
+                <motion.button variants = { fade }> <Link to="/projects"> 
+                    View Projects
+                    </Link>
                 </motion.button>
             </StyledDescription>
             <StyledImage>
