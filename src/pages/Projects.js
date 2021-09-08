@@ -8,6 +8,17 @@ import CE from '../images/CE.png';
 import MA from '../images/MA.png';
 import DF from '../images/DF.png'; 
 
+import african from '../images/african.png'; 
+import job from '../images/job-seeker.png'; 
+import github from '../images/github.png'; 
+import currency from '../images/currency.png'; 
+import lion from '../images/lion.png'; 
+import music from '../images/music.png'; 
+import shopping from '../images/online-shopping.png'; 
+import pizza from '../images/pizza.png'; 
+import studio from '../images/studio.png'; 
+import quotes from '../images/quotes.png'; 
+
 //Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from '../animation';
@@ -35,13 +46,15 @@ const Projects = () => {
                 <Frame3 variants = { slider }> </Frame3>
                 <Frame4 variants = { slider }> </Frame4>
             </motion.div> */}
+            
 
                 <StyledProject>
+                    
                     <motion.h2 variants = { fade }>Currency Exchange</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/currency-exchange">
                         <Hide> 
-                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                            <motion.img variants = { photoAnim } src={currency} alt="Screenshot of Currency Exchange home page"/>
                         </Hide>
                     </Link>
                 </StyledProject>
@@ -50,7 +63,7 @@ const Projects = () => {
                     <motion.h2 variants = { fade }>Music Application</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/music-application">
-                        <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                        <motion.img variants = { photoAnim } src={music} alt="Screenshot of Music Application home page"/>
                     </Link>
                 </StyledProject>
 
@@ -58,7 +71,7 @@ const Projects = () => {
                     <motion.h2 variants = { fade }>Douglas Fir</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/douglas-fir">
-                        <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                        <motion.img variants = { photoAnim } src={lion} alt="Screenshot of Douglas Fir home page"/>
                     </Link>
                 </StyledProject>
 
@@ -67,7 +80,7 @@ const Projects = () => {
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/quotes-app">
                         <Hide> 
-                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                            <motion.img variants = { photoAnim } src={quotes} alt="Screenshot of Currency Exchange home page"/>
                         </Hide>
                     </Link>
                 </StyledProject>
@@ -76,7 +89,7 @@ const Projects = () => {
                     <motion.h2 variants = { fade }>Pizza Place</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/pizza-place">
-                        <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                        <motion.img variants = { photoAnim } src={pizza} alt="Screenshot of Music Application home page"/>
                     </Link>
                 </StyledProject>
 
@@ -84,7 +97,7 @@ const Projects = () => {
                     <motion.h2 variants = { fade }>Github Search</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/github-search">
-                        <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                        <motion.img variants = { photoAnim } src={github} alt="Screenshot of Douglas Fir home page"/>
                     </Link>
                 </StyledProject>
 
@@ -93,7 +106,7 @@ const Projects = () => {
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/akan-names">
                         <Hide> 
-                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                            <motion.img variants = { photoAnim } src={african} alt="Screenshot of Currency Exchange home page"/>
                         </Hide>
                     </Link>
                 </StyledProject>
@@ -102,7 +115,7 @@ const Projects = () => {
                     <motion.h2 variants = { fade }>Delani Studio</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/delani-studio">
-                        <motion.img variants = { photoAnim } src={MA} alt="Screenshot of Music Application home page"/>
+                        <motion.img variants = { photoAnim } src={studio} alt="Screenshot of Music Application home page"/>
                     </Link>
                 </StyledProject>
 
@@ -110,7 +123,7 @@ const Projects = () => {
                     <motion.h2 variants = { fade }>Job Search</motion.h2>
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/job-search">
-                        <motion.img variants = { photoAnim } src={DF} alt="Screenshot of Douglas Fir home page"/>
+                        <motion.img variants = { photoAnim } src={job} alt="Screenshot of Douglas Fir home page"/>
                     </Link>
                 </StyledProject>
 
@@ -119,7 +132,7 @@ const Projects = () => {
                     <motion.div variants = { lineAnim } className="line"></motion.div>
                     <Link to = "/projects/shopping-app">
                         <Hide> 
-                            <motion.img variants = { photoAnim } src={CE} alt="Screenshot of Currency Exchange home page"/>
+                            <motion.img variants = { photoAnim } src={shopping} alt="Screenshot of Currency Exchange home page"/>
                         </Hide>
                     </Link>
                 </StyledProject>
@@ -156,7 +169,7 @@ const StyledProject = styled(motion.div)`
     }
     img {
         width: 70%;
-        height: 50vh;
+        height: 50%;
         object-fit: cover;
     }
     h2 {
