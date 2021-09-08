@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 //Images
-import CE from '../images/CE.png';
-import MA from '../images/MA.png';
-import DF from '../images/DF.png'; 
 
 import african from '../images/african.png'; 
 import job from '../images/job-seeker.png'; 
@@ -22,15 +19,15 @@ import quotes from '../images/quotes.png';
 //Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from '../animation';
-import { sliderContainer, fade, photoAnim, lineAnim, slider, swoopAdoop } from '../animation';
-import { useScroll } from '../components/useScroll';
+import { fade, photoAnim, lineAnim } from '../animation';
+//import { useScroll } from '../components/useScroll';
 
 
 
 const Projects = () => {
 
-    const [element, controls] = useScroll();
-    const [element2, controls2] = useScroll();
+    // const [element, controls] = useScroll();
+    // const [element2, controls2] = useScroll();
 
     return(
         <StyledProjects 
@@ -183,26 +180,26 @@ const Hide = styled.div `
 
 
 //Frame Animation
-const Frame1 = styled(motion.div) `
-    position: fixed;
-    left: 0;
-    top: 10;
-    width: 100%;
-    height: 100vh;
-    background: #fffebf;
-    z-index: 2;
-`;
+// const Frame1 = styled(motion.div) `
+//     position: fixed;
+//     left: 0;
+//     top: 10;
+//     width: 100%;
+//     height: 100vh;
+//     background: #fffebf;
+//     z-index: 2;
+// `;
 
-const Frame2 = styled(Frame1) `
-    background: #ff8efb;
-`;
+// const Frame2 = styled(Frame1) `
+//     background: #ff8efb;
+// `;
 
-const Frame3 = styled(Frame1) `
-    background: #8ed2ff;
-`;
+// const Frame3 = styled(Frame1) `
+//     background: #8ed2ff;
+// `;
 
-const Frame4 = styled(Frame1) `
-    background: #8effa0;
-`;
+// const Frame4 = styled(Frame1) `
+//     background: #8effa0;
+// `;
 
 export default Projects; 

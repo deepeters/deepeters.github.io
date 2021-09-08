@@ -7,12 +7,12 @@ import { StyledAbout } from '../styles';
 import Toggle from './Toggle';
 
 import { AnimateSharedLayout } from 'framer-motion';
-import { useScroll } from "./useScroll";
+//import { useScroll } from "./useScroll";
 
 
 const QuestionsSection = () => {
 
-    const [element, controls] = useScroll();
+    //const [element, controls] = useScroll();
 
     return (
         <StyledQuestions

@@ -15,13 +15,13 @@ import styled from 'styled-components';
 //Styles
 import {StyledAbout, StyledDescription, StyledImage } from "../styles";
 
-import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+//import { useScroll } from "./useScroll";
+//import { scrollReveal } from "../animation";
 
 
 const InterestsSection = () => {
 
-    const [element, controls] = useScroll();
+    //const [element, controls] = useScroll();
 
     return (
         <StyledInterests 
