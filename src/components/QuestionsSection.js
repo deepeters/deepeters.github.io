@@ -15,7 +15,12 @@ const QuestionsSection = () => {
     const [element, controls] = useScroll();
 
     return (
-        <StyledQuestions>
+        <StyledQuestions
+            // variants = { scrollReveal } 
+            // ref = { element } 
+            // animate = { controls } 
+            // initial = "hidden"
+        >
             <h2> Any Questions? <span> FAQs </span> </h2>
             <AnimateSharedLayout> 
                 <Toggle title = "What is Dennis's TechStack and Skillset?">              

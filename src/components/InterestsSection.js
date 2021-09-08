@@ -24,7 +24,12 @@ const InterestsSection = () => {
     const [element, controls] = useScroll();
 
     return (
-        <StyledInterests variants = { scrollReveal } ref = { element } animate = { controls } initial = "hidden">
+        <StyledInterests 
+            // variants = { scrollReveal } 
+            // ref = { element } 
+            // animate = { controls } 
+            // initial = "hidden"
+        >
             <StyledImage>
                 <img src= {Interests} height = "600" alt="Interests Section" />
             </StyledImage>
