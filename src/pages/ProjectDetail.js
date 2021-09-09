@@ -104,6 +104,9 @@ const StyledLinks = styled.div`
         display: block;
         margin: 2rem 2rem;        
     }
+    img {
+        height: 30vh;
+    }
 `;
 
 const StyledLink = styled.div`

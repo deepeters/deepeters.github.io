@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from "react-player";
+import { Link } from 'react-router-dom';
 
 //Import Images
 import CE from "./images/CE.png";
@@ -8,6 +9,8 @@ import MA from "./images/MA.png";
 import MA2 from "./images/MA-2.png";
 import DF from "./images/DF.png";
 import DF2 from "./images/DF-2.png";
+import CEgif from "./images/CEgif.gif"
+import gitrepo from "./images/gitrepo.png"
 
 
 export const ProjectState = () => {
@@ -100,23 +103,27 @@ export const ProjectState = () => {
       </p>,
       links: [
         {
-          title: "Live Link",
+          title: "Live Heroku Link",
           description:
-            "https://currency-exchange-application.herokuapp.com/",
+            <a href = "https://currency-exchange-application.herokuapp.com/" target = "_blank" rel = "noopener noreferrer">
+              <img src= {CEgif} alt="Currency Exchange GIF" />
+            </a>
         },
         {
           title: "YouTube Demo",
           description: 
-          <div className="Youtube">
+          <div className="youtube">
             <ReactPlayer
               url="https://youtu.be/pzUS_yKeVxI"
             />
           </div>,
         },
         {
-          title: "Repository Link",
+          title: "Github Repository Link",
           description:
-            "https://github.com/deepeters/currency-exchange-app",
+          <a href = "https://github.com/deepeters/currency-exchange-app" target = "_blank" rel = "noopener noreferrer">
+            <img src= {gitrepo} alt="Github Icon" />
+          </a>
         },
       ],
     },
