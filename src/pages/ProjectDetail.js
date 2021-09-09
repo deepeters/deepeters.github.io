@@ -53,6 +53,7 @@ const ProjectDetail = () => {
 
 const StyledDetail = styled(motion.div)`
     color: white;
+    padding: 0rem 20rem;
 `;
 const StyledHeadLine = styled.div`
     min-height: 90vh;
@@ -66,8 +67,8 @@ const StyledHeadLine = styled.div`
     }
     img{
         width: 100%;
-        height: 70vh;
-        object-fit: cover;
+        height: 100%;
+        //object-fit: cover;
     }
 `;
 const StyledDescription = styled.div `
@@ -76,6 +77,7 @@ const StyledDescription = styled.div `
     align-items: center;
     h3 {
         font-size: 2rem;
+        font-weight: lighter;
     }
     .line {
         width: 100%;
@@ -84,7 +86,12 @@ const StyledDescription = styled.div `
         margin: 1rem 0rem;
     }
     p {
-        padding: 2rem 0rem; 
+        padding: 2rem 0rem;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+    ul {
+        padding: 0rem 4rem 0rem;
     }
 `;
 const StyledLinks = styled.div`
