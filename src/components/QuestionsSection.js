@@ -53,14 +53,10 @@ const QuestionsSection = () => {
                 </Toggle>
                 <Toggle title = "Where has Dennis worked?"> 
                         <div className="answer">
-                            <h4> 2021 – to date || <span>  Software Engineer </span> || UjuziTech Ltd. </h4>
+                            <h4> 2021 – to date || <span>  Software Engineer </span> || Techsavanna Technology - Kenya Airways </h4>
                             <p>
                                 <ul>
-                                    <li> Software development in C#, Java, JavaScript, Microsoft C/AL and AL programming languages. </li>
-                                    <li> Implementation of integration of various information systems such as core banking systems and Microsoft Dynamics versions including MS 365 and MS Business Central. </li>
-                                    <li> Implementing hybrid cloud infrastructure on Azure Cloud. </li>
-                                    <li> Tech lead on the development of new independent modules such as payroll and human resources. </li>
-                                    <li> Application, design and utilisation of APIs such the Safaricom Mpesa B2C, B2B and C2B payment API as well as Bank EFT integrations. </li>
+                                    <li> Fullstack Web Development at Kenya Airways </li>
                                 </ul>
                             </p>
 
