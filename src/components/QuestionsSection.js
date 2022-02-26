@@ -111,8 +111,8 @@ const QuestionsSection = () => {
               <ul>
                 <li>
                   {" "}
-                  Managed Citius Core Banking, Agency Banking, Mobile Banking and Internet Banking system projects in
-                  different roles – implementation, testing, migration training etc.{" "}
+                  Managed Citius Core Banking, Agency Banking, Mobile Banking and Internet Banking system applications
+                  in different roles – implementation, testing, migration training etc.{" "}
                 </li>
                 <li> Oracle Database Management. </li>
                 <li>
