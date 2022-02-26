@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/static/js/main.818ea9c3.chunk.js",
+    "main.js.map": "/static/js/main.818ea9c3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.856d1542.js",
+    "runtime-main.js.map": "/static/js/runtime-main.856d1542.js.map",
+    "static/js/2.1ecf69da.chunk.js": "/static/js/2.1ecf69da.chunk.js",
+    "static/js/2.1ecf69da.chunk.js.map": "/static/js/2.1ecf69da.chunk.js.map",
+    "static/js/3.5222fe98.chunk.js": "/static/js/3.5222fe98.chunk.js",
+    "static/js/3.5222fe98.chunk.js.map": "/static/js/3.5222fe98.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.1ecf69da.chunk.js.LICENSE.txt": "/static/js/2.1ecf69da.chunk.js.LICENSE.txt",
+    "static/media/AI.bbd65ac2.png": "/static/media/AI.bbd65ac2.png",
+    "static/media/CE-2.82855846.png": "/static/media/CE-2.82855846.png",
+    "static/media/CE.78fc9cc6.png": "/static/media/CE.78fc9cc6.png",
+    "static/media/CEgif.2c7b75a1.gif": "/static/media/CEgif.2c7b75a1.gif",
+    "static/media/DF-2.ce7bfdb9.png": "/static/media/DF-2.ce7bfdb9.png",
+    "static/media/DF.990b53ef.png": "/static/media/DF.990b53ef.png",
+    "static/media/MA-2.5751bd66.png": "/static/media/MA-2.5751bd66.png",
+    "static/media/MA.8c2a9463.png": "/static/media/MA.8c2a9463.png",
+    "static/media/about.a49b5166.jpg": "/static/media/about.a49b5166.jpg",
+    "static/media/african-woman.97352f9c.png": "/static/media/african-woman.97352f9c.png",
+    "static/media/african.2a98f965.png": "/static/media/african.2a98f965.png",
+    "static/media/background.5459a083.jpg": "/static/media/background.5459a083.jpg",
+    "static/media/currency.c6e0af43.png": "/static/media/currency.c6e0af43.png",
+    "static/media/gitrepo.553c6615.png": "/static/media/gitrepo.553c6615.png",
+    "static/media/interests.1a6e94b3.jpg": "/static/media/interests.1a6e94b3.jpg",
+    "static/media/job-seeker.3b6bb258.png": "/static/media/job-seeker.3b6bb258.png",
+    "static/media/lion.8ae4d5f0.png": "/static/media/lion.8ae4d5f0.png",
+    "static/media/machine-learning.77efc7a9.png": "/static/media/machine-learning.77efc7a9.png",
+    "static/media/music.160d4f87.png": "/static/media/music.160d4f87.png",
+    "static/media/online-shopping.434a8ca2.png": "/static/media/online-shopping.434a8ca2.png",
+    "static/media/pizza.19859826.png": "/static/media/pizza.19859826.png",
+    "static/media/quotes.e2d6e061.png": "/static/media/quotes.e2d6e061.png",
+    "static/media/security.ab59ac7d.png": "/static/media/security.ab59ac7d.png",
+    "static/media/studio.3ac91a7c.png": "/static/media/studio.3ac91a7c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.856d1542.js",
+    "static/js/2.1ecf69da.chunk.js",
+    "static/js/main.818ea9c3.chunk.js"
+  ]
+}
